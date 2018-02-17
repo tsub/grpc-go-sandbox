@@ -1,6 +1,6 @@
 package main
 
-//go:generate protoc -I protobuf --go_out=plugins=grpc:protobuf protobuf/hello.proto
+//go:generate protoeasy --go --go-import-path=github.com/tsub/grpc-go-sandbox/protobuf --grpc --grpc-gateway protobuf
 
 import (
 	"context"

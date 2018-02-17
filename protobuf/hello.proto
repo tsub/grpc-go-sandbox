@@ -2,8 +2,14 @@ syntax = "proto3";
 
 package protobuf;
 
+import "google/api/annotations.proto";
+
 service Greeter {
-  rpc SayHello (HelloRequest) returns (HelloResponse) {}
+  rpc SayHello (HelloRequest) returns (HelloResponse) {
+    option (google.api.http) = {
+      get: "/v1/greeter"
+    };
+  }
 }
 
 message HelloRequest {
