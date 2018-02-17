@@ -1,5 +1,7 @@
 package main
 
+//go:generate protoc -I protobuf --go_out=plugins=grpc:protobuf protobuf/hello.proto
+
 import (
 	"context"
 	"log"
