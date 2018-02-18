@@ -28,6 +28,12 @@
 
 [[projects]]
   branch = "master"
+  name = "github.com/tsub/grpc-go-sandbox"
+  packages = ["protobuf"]
+  revision = "2494e05acee4419b09b6a4e0c16b31e655febd00"
+
+[[projects]]
+  branch = "master"
   name = "golang.org/x/net"
   packages = [
     "context",
@@ -105,6 +111,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "9e163cb1bbf419e089420812f3a0d60d97f8ae9ad25058d795f49acb1078a324"
+  inputs-digest = "786ff2cf14ee4344735520604eec7d9e5d822e0cd268eeaba63e752f7a74421d"
   solver-name = "gps-cdcl"
   solver-version = 1
